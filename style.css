@@ -2,7 +2,7 @@
 :root {
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
     --fonte2: 'Passion One', cursive;
-    --fonte3: 'Sriracha', cursive;
+    --fonte3: 'Arial, cusive';
 }
 
 * {
@@ -70,6 +70,7 @@ section.imagem {
     background-color: rgb(51, 51, 51);
     color: white;
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    width: 100%;
     background-size: cover;
     background-attachment: fixed;
 }
