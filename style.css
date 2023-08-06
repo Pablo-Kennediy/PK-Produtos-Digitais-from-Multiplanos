@@ -83,6 +83,7 @@ section.imagem > p {
 
 section#img01 {
     background-image: url('img01.png');
+    position: relative;
 }
 
 section#img02 {
