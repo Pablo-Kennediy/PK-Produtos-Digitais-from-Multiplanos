@@ -10,7 +10,21 @@
     padding: 0px;
     font-size: 1em;
 }
+nav{
+    display: block;
+    position: relative;
+    background-color: black;
 
+}
+nav ul{
+    position: relative;
+    list-style: none;
+}
+nav ul li{
+    margin: auto;
+    border: gray solid;
+    display: inline-block;
+}
 html, body {
     min-height: 100vh;
     background-color: darkgray;
@@ -45,6 +59,7 @@ header a:hover, footer a:hover {
 }
 
 section {
+    position: relative;
     line-height: 2em;
     padding-left: 30px;
     font-family: var(--fonte3);
