@@ -48,7 +48,7 @@ section {
     line-height: 2em;
     padding-left: 30px;
     font-family: var(--fonte3);
-    font-size: 3.5vw;
+    font-size: larger;
 }
 
 section > p {
@@ -60,9 +60,13 @@ section.normal {
     color: black;
 }
 
+section.normal label{
+    font-size: small;
+}
+
 section.imagem {
-    padding-top: 25vh;
-    padding-bottom: 25vh;
+    padding-top: 40vh;
+    padding-bottom: 40vh;
     background-color: rgb(51, 51, 51);
     color: white;
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
@@ -79,13 +83,14 @@ section.imagem > p {
 
 section#img01 {
     background-image: url('img01.png');
-    background-position: right center;
 }
 
 section#img02 {
     background-image: url('img02.png');
 }
-
+section#mapa {
+    background-image: url('mapa.png');
+}
 footer {
     background-color: black;
     color: white;
