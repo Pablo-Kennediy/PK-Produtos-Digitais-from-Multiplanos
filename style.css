@@ -4,26 +4,136 @@
     --fonte2: 'Passion One', cursive;
     --fonte3: 'Arial, cusive';
 }
-
 * {
     margin: 0px;
     padding: 0px;
     font-size: 1em;
 }
+h1{
+    font-size: xx-large;
+}
+p{
+    box-shadow: inset 6px 6pxrgba(0, 0, 0, 0.473);
+    padding-left: 30px;
+}
+.cloth{
+    flex-wrap: wrap;
+    margin: auto;
+    padding: auto;
+}
+#barraLateral{
+    float: left;
+}
+#check{
+    display: none;
+}
+#iconeMenu{
+    cursor: pointer;
+    padding: 1px;
+    position: absolute;
+    z-index: 1;
+}
+picture#iconeMenu{
+    width: 100%;
+}
+picture#iconeMenu img{
+    width: 30px;
+}
+.barra{
+    padding: 5px;
+    height: 100%;
+    position: absolute;
+    transition: all .2s linear;
+    left: -500px;
+}
+#check:checked ~ .barra{
+    transform: translateX(500px);
+}
+.tooltip {
+    position: relative;
+    border-bottom: 1px dashed #000;
+    color: #fff;
+}
+.tooltip:before {
+    content: attr(data-text);
+    position: absolute;
+    bottom: 50%;
+    margin-bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #000;
+    text-align: center;
+    display: none;
+}
+.tooltip:after {
+    content: "";
+    position: absolute;
+    bottom: 50%;
+    margin-bottom: 5.3px;
+    left: calc(50% - 10px);
+    transform: translateX(-50%);
+    rotate: 270deg;
+    border: 10px solid;
+    border-color: transparent black transparent transparent;
+    display: none;
+}
+.tooltip:hover:before, .tooltip:hover:after {
+    display: block;
+}
 nav{
     display: block;
-    position: relative;
-    background-color: black;
-
 }
-nav ul{
-    position: relative;
+ol{
     list-style: none;
 }
-nav ul li{
-    margin: auto;
-    border: gray solid;
+li{
     display: inline-block;
+    margin: 12px;
+    padding: 3px;
+    border: solid white 2px;
+}
+nav a{ 
+    text-decoration: none;
+}
+button.link{
+    display: block;
+    margin-top: 5px;
+}
+.link:hover{
+    background-color: #050542;
+}
+a:hover{
+    text-decoration: underline;
+}
+a:hover{
+    transition: 0.5s;
+    text-decoration: none;
+    color: rgb(112, 12, 151);
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+input{
+    background: rgba(105, 56, 107, 0.473);
+    color: white;
+    width: 100%;
+}
+input#inputForm{
+    box-shadow: 1px 1px 10px rgba(137, 43, 226, 0.452);
+}
+button#menu{
+    width: 100%;
+}
+button{
+    margin: 5px;
+    background: rgba(62, 32, 172, 0.527);
+    border: white 1px solid;
+    border-radius: 5px;
+    color: white;
 }
 html, body {
     min-height: 100vh;
@@ -61,7 +171,6 @@ header a:hover, footer a:hover {
 section {
     position: relative;
     line-height: 2em;
-    padding-left: 30px;
     font-family: var(--fonte3);
     font-size: larger;
 }
@@ -92,25 +201,37 @@ section.imagem {
 
 section.imagem > p {
     display: inline-block;
-    padding: 5px;
     background-color: rgba(0, 0, 0, 0.514);
     text-shadow: 1px 1px 0px black;
 }
-
+section#img0{
+    background-image: url('WhatsApp\ Image\ 2023-08-10\ at\ 09.49.45.jpeg');
+}
 section#img01 {
-    background-image: url('img01.png');
-    position: relative;
+    background-image: url('Prisma.jpg');
 }
 
 section#img02 {
-    background-image: url('img02.png');
+    background-image: url('Suzuki.jpg');
+}
+section#img03 {
+    background-image: url('WhatsApp\ Image\ 2023-08-10\ at\ 09.49.44.jpeg');
 }
 section#mapa {
     background-image: url('mapa.png');
+}
+picture#patrocinadores img{
+    border-radius: 500px;
+    width: 100px;
+    float: right;
 }
 footer {
     background-color: black;
     color: white;
     text-align: center;
     padding: 10px;
+}
+footer label{
+    border: solid white 3px;
+    margin: 30px;
 }
