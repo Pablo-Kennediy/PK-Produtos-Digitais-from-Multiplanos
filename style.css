@@ -1,237 +1,136 @@
-@charset "UTF-8";
-:root {
-    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
-    --fonte2: 'Passion One', cursive;
-    --fonte3: 'Arial, cusive';
-}
 * {
-    margin: 0px;
-    padding: 0px;
-    font-size: 1em;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
-h1{
-    font-size: xx-large;
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
 }
-p{
-    box-shadow: inset 6px 6pxrgba(0, 0, 0, 0.473);
-    padding-left: 30px;
+
+a:hover {
+  opacity: 0.7;
 }
-.cloth{
-    flex-wrap: wrap;
-    margin: auto;
-    padding: auto;
+
+.logo {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
 }
-#barraLateral{
-    float: left;
+
+nav#logoMultiplanos img {
+  position: absolute;
+
 }
-#check{
-    display: none;
+
+div#logoMultiplanos{
+  margin: 15px;
 }
-#iconeMenu{
-    cursor: pointer;
-    padding: 1px;
+
+#logoMultiplanos img {
+  background-image: url("logoMultiplanos.png");
+  border-radius: 15px;
+  max-width: 15vh;
+  box-shadow: 8px 7px 15px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  background: #23232e;
+
+}
+
+main {
+  background: url("bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 92vh;
+}
+
+form {
+  list-style: none;
+  margin: auto;
+  padding: 25px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-list {
     position: absolute;
-    z-index: 1;
-}
-picture#iconeMenu{
-    width: 100%;
-}
-picture#iconeMenu img{
-    width: 30px;
-}
-.barra{
-    padding: 5px;
-    height: 100%;
-    position: absolute;
-    transition: all .2s linear;
-    left: -500px;
-}
-#check:checked ~ .barra{
-    transform: translateX(500px);
-}
-.tooltip {
-    position: relative;
-    border-bottom: 1px dashed #000;
-    color: #fff;
-}
-.tooltip:before {
-    content: attr(data-text);
-    position: absolute;
-    bottom: 50%;
-    margin-bottom: 15px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 200px;
-    padding: 10px;
-    border-radius: 10px;
-    background: #000;
-    text-align: center;
-    display: none;
-}
-.tooltip:after {
-    content: "";
-    position: absolute;
-    bottom: 50%;
-    margin-bottom: 5.3px;
-    left: calc(50% - 10px);
-    transform: translateX(-50%);
-    rotate: 270deg;
-    border: 10px solid;
-    border-color: transparent black transparent transparent;
-    display: none;
-}
-.tooltip:hover:before, .tooltip:hover:after {
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    background: #23232e;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+
+  .mobile-menu {
     display: block;
-}
-nav{
-    display: block;
-}
-ol{
-    list-style: none;
-}
-li{
-    display: inline-block;
-    margin: 12px;
-    padding: 3px;
-    border: solid white 2px;
-}
-nav a{ 
-    text-decoration: none;
-}
-button.link{
-    display: block;
-    margin-top: 5px;
-}
-.link:hover{
-    background-color: #050542;
-}
-a:hover{
-    text-decoration: underline;
-}
-a:hover{
-    transition: 0.5s;
-    text-decoration: none;
-    color: rgb(112, 12, 151);
-}
-a{
-    color: white;
-    text-decoration: none;
-}
-input{
-    background: rgba(105, 56, 107, 0.473);
-    color: white;
-    width: 100%;
-}
-input#inputForm{
-    box-shadow: 1px 1px 10px rgba(137, 43, 226, 0.452);
-}
-button#menu{
-    width: 100%;
-}
-button{
-    margin: 5px;
-    background: rgba(62, 32, 172, 0.527);
-    border: white 1px solid;
-    border-radius: 5px;
-    color: white;
-}
-html, body {
-    min-height: 100vh;
-    background-color: darkgray;
-    font-family: var(--fonte1);
+  }
 }
 
-header {
-    background-color: black;
-    color: white;
-    text-align: center;
+.nav-list.active {
+  transform: translateX(0);
 }
 
-header > h1 {
-    padding-top: 50px;
-    font-variant: small-caps;
-    font-family: var(--fonte2);
-    font-size: 10vw;
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
-header > p {
-    padding-bottom: 50px;
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
 }
 
-header a, footer a {
-    color: white;
-    text-decoration: none;
-    font-weight: bolder;
+.mobile-menu.active .line2 {
+  opacity: 0;
 }
 
-header a:hover, footer a:hover {
-    text-decoration: underline;
-}
-
-section {
-    position: relative;
-    line-height: 2em;
-    font-family: var(--fonte3);
-    font-size: larger;
-}
-
-section > p {
-    padding-bottom: 2em;
-}
-
-section.normal {
-    background-color: white;
-    color: black;
-}
-
-section.normal label{
-    font-size: small;
-}
-
-section.imagem {
-    padding-top: 40vh;
-    padding-bottom: 40vh;
-    background-color: rgb(51, 51, 51);
-    color: white;
-    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
-    width: 100%;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-section.imagem > p {
-    display: inline-block;
-    background-color: rgba(0, 0, 0, 0.514);
-    text-shadow: 1px 1px 0px black;
-}
-section#img0{
-    background-image: url('WhatsApp\ Image\ 2023-08-10\ at\ 09.49.45.jpeg');
-}
-section#img01 {
-    background-image: url('Prisma.jpg');
-}
-
-section#img02 {
-    background-image: url('Suzuki.jpg');
-}
-section#img03 {
-    background-image: url('WhatsApp\ Image\ 2023-08-10\ at\ 09.49.44.jpeg');
-}
-section#mapa {
-    background-image: url('mapa.png');
-}
-picture#patrocinadores img{
-    border-radius: 500px;
-    width: 100px;
-    float: right;
-}
-footer {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
-footer label{
-    border: solid white 3px;
-    margin: 30px;
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
 }
