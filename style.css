@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+header > p{
+  padding: 25px;
+}
+
 picture#logoMultiplanos {
   display: block;
   margin: 15px;
@@ -21,7 +25,11 @@ form {
   list-style: none;
   margin: auto;
   margin-bottom: 25px;
-  padding: 25px;
+}
+
+form > p, input {
+  font-size: large;
+  padding: 5px;
 }
 
 a {
@@ -46,7 +54,7 @@ nav {
   align-items: center;
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
   background: #23232e;
-  height: 8vh;
+  height: 25vh;
 }
 
 main {
@@ -58,6 +66,8 @@ Aqui é pra escolher a imagem de fundo PÓREM muita calma, to esperando o pix.
   background-size: cover;
   height: 92vh;
   */
+  margin: 25px;
+  padding: 25px;
 }
 
 section{
