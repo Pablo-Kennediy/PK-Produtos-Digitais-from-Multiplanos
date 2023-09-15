@@ -1,11 +1,27 @@
 * {
   margin: 0;
   padding: 0;
-  text-align: center;
 }
-body{
 
-  height: 92vh; 
+picture#logoMultiplanos {
+  display: block;
+  margin: 15px;
+}
+
+#logoMultiplanos img {
+  background-image: url("logoMultiplanos.png");
+  border-radius: 15px;
+  max-width: 15vh;
+  box-shadow: 8px 7px 15px;
+}
+
+form {
+  display: block;
+  text-align: justify;
+  list-style: none;
+  margin: auto;
+  margin-bottom: 25px;
+  padding: 25px;
 }
 
 a {
@@ -24,34 +40,27 @@ a:hover {
   letter-spacing: 4px;
 }
 
-nav#logoMultiplanos img {
-  position: absolute;
-
-}
-
-div#logoMultiplanos {
-  margin: 15px;
-}
-
-#logoMultiplanos img {
-  background-image: url("logoMultiplanos.png");
-  border-radius: 15px;
-  max-width: 15vh;
-  box-shadow: 8px 7px 15px;
-}
-
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
   background: #23232e;
+  height: 8vh;
 }
 
-form {
-  text-align: justify;
-  list-style: none;
-  margin: auto;
+main {
+  /*
+
+Aqui é pra escolher a imagem de fundo PÓREM muita calma, to esperando o pix.
+
+  background: url("bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 92vh;
+  */
+}
+
+section{
   padding: 25px;
 }
 
@@ -72,6 +81,7 @@ form {
 
 .mobile-menu div {
   width: 32px;
+  height: 2px;
   background: #fff;
   margin: 8px;
   transition: 0.3s;
@@ -87,6 +97,7 @@ form {
     top: 8vh;
     right: 0;
     width: 50vw;
+    height: 92vh;
     background: #23232e;
     flex-direction: column;
     align-items: center;
@@ -133,6 +144,8 @@ form {
   transform: rotate(45deg) translate(-5px, -7px);
 }
 footer{
+  padding-bottom: 15px;
+  text-align: center;
   background-color: black;
-  color: white;
+  color: darkgoldenrod;
 }
