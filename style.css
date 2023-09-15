@@ -27,9 +27,21 @@ form {
   margin-bottom: 25px;
 }
 
+form  li{
+  margin: 15px;
+}
+
 form > p, input {
   font-size: large;
-  padding: 5px;
+}
+
+fieldset{
+  padding: 15px;
+}
+
+.glow-on-hover{
+  
+  margin: auto;
 }
 
 a {

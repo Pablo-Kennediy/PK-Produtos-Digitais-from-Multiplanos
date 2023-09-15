@@ -68,7 +68,7 @@
     </p>
   </header>
   <script src="mobile-navbar.js"></script>
-  
+
   <main>
 
     <section>
@@ -111,32 +111,36 @@
           <legend>
             Mensagem do Usuário
           </legend>
-          <p><label for="cUrg">
+          <li>
+            <label for="cUrg">
               Grau de Urgência:
             </label>
             Min
             <input type="range" name="tUrg" id="cUrg" min="0" max="10" step="1">Máx
-          </p>
-          <p><label for="cMsg">
+          </li>
+          <li>
+            <label for="cMsg">
               Mensagem:
             </label>
             <textarea name="tMsg" id="cMsg" rows="3"
               placeholder="Deixe aqui um comentario para o proximo consultor"></textarea>
-          </p>
+          </li>
           <li>
             CPF?
             <input type="text">
           </li>
-          <p>
-            <label for="cNasc">Data de Nascimento:</label>
+          <li>
+            <label for="cNasc">
+              Data de Nascimento:
+            </label>
             <input type="date" name="tNasc" id="cNasc">
-          </p>
-          <p>
+          </li>
+          <li>
             <label for="cMail">
               E-mail:
             </label>
             <input type="email" nome="tMail" id="cMail" size="20" maxlength="40">
-          </p>
+          </li>
           <li>
             RG?
             <input type="text">
@@ -213,7 +217,9 @@
               <option value="Belford Roxo"></option>
             </datalist>
           </fieldset>
-          <button class="glow-on-hover" type="button">Enviar</button>
+          <button class="glow-on-hover" type="button">
+            Enviar
+          </button>
       </form>
 
     </section>
