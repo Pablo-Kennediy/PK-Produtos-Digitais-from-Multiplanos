@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 header > p{
@@ -23,15 +24,24 @@ form {
   display: block;
   text-align: justify;
   list-style: none;
-  max-width: 380px; 
+  max-width: 430px; 
   margin: auto;
   margin-bottom: 25px;
 }
 
-form li{
+form{
+  justify-content:space-around;
+  padding: 15px;
+}
+
+#simulacao{
   text-align: justify;
-  list-style: none;
-  margin: 15px;
+}
+
+
+
+form > li{
+  
 }
 
 form input{
@@ -86,12 +96,10 @@ Aqui é pra escolher a imagem de fundo PÓREM muita calma, to esperando o pix.
   background-size: cover;
   height: 92vh;
   */
-  margin: 25px;
-  padding: 25px;
 }
 
 section{
-  padding: 25px;
+  margin: auto;
 }
 
 .nav-list {
@@ -110,7 +118,7 @@ section{
 }
 
 .mobile-menu div {
-  width: 32px;
+  max-width: 32px;
   height: 2px;
   background: #fff;
   margin: 8px;
@@ -126,7 +134,7 @@ section{
     position: absolute;
     top: 8vh;
     right: 0;
-    width: 50vw;
+    max-width: 50vw;
     height: 92vh;
     background: #23232e;
     flex-direction: column;
