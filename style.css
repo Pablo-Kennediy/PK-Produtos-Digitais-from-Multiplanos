@@ -3,6 +3,10 @@
   padding: 0;
   text-align: center;
 }
+body{
+
+  height: 92vh; 
+}
 
 a {
   color: #fff;
@@ -25,7 +29,7 @@ nav#logoMultiplanos img {
 
 }
 
-div#logoMultiplanos{
+div#logoMultiplanos {
   margin: 15px;
 }
 
@@ -42,16 +46,10 @@ nav {
   align-items: center;
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
   background: #23232e;
-
-}
-
-main {
-  background: url("bg.jpg") no-repeat center center;
-  background-size: cover;
-  height: 92vh;
 }
 
 form {
+  text-align: justify;
   list-style: none;
   margin: auto;
   padding: 25px;
@@ -133,4 +131,8 @@ form {
 
 .mobile-menu.active .line3 {
   transform: rotate(45deg) translate(-5px, -7px);
+}
+footer{
+  background-color: black;
+  color: white;
 }
