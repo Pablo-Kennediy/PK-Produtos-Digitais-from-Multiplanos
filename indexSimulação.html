@@ -12,7 +12,6 @@
 <body>
   <header>
 
-
     <nav>
 
       <picture id="logoMultiplanos">
@@ -68,160 +67,145 @@
   <main>
 
     <section>
+      <div id="simulacao">
+        <form>
+          <div id="solicitacaoDeCredito" class="simulacao">
+            <fieldset>
+              <legend>
+                <h1>
+                  Preenchendo a ficha
+                </h1>
+              </legend>
+              <li>
+                <label for="cNome">
+                  Cliente
+                </label>
+                <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome completo">
+              </li>
+              <li>
+                CPF?
+                <input type="text">
+              </li>
+              <li>
+                O cliente tem restrição no CPF?
+                <label for="cpfOk" class="item">
+                  Sim
+                  <input type="checkbox" name="" id="">
+                  Não
+                  <input type="checkbox" name="" id="">
+                </label>
+              </li>
+              <li>
+                Valor desejado para o seu investimento?
+                <input type="number" name="" id="">
+              </li>
+              <li>
+              <li>
+                Qual é seu trabalho/função?
+                <input type="text" name="" id="">
+              </li>
+              <li>
+                Renda Mensal?
+                <input type="number" name="" id="">
+              </li>
+              <li>
+                Grau de Urgência: <br>
+                <label for="cUrg" style="display: flex;">
+                  Min
+                  <input type="range" name="tUrg" id="cUrg" min="0" max="10" step="1">Máx
+                </label>
+              </li>
+              <li>
+                Valor desejado para as parcelas?
+                <input type="number" name="" id="">
+              </li>
+              <li>
+                Valor de entrada disponivél em conta para fazer o seu investimento?
+                <input type="number" name="" id="">
+              </li>
+            </fieldset>
+          </div>
 
-      <form id="simulacao">
+          <div id="infoPessoais" class="simulacao">
+            <fieldset>
+              <legend>
+                <strong>Informações pessoais</strong>
+              </legend>
+              <li>
+                <label for="cNasc">
+                  Data de Nascimento:
+                </label>
+                <input type="date" name="tNasc" id="cNasc">
+              </li>
+              <li>
+                <label for="cMail">
+                  E-mail:
+                </label>
+                <input type="email" nome="tMail" id="cMail" size="20" maxlength="40">
+              </li>
+              <li>
+                RG?
+                <input type="text">
+              </li>
+              <li>
+                Nome completo do Pai?
+                <input type="text" name="" id="">
+              </li>
+              <li>
+                Nome completo da Mãe?
+                <input type="text" name="" id="">
+              </li>
+              <li>
+                Endereço:
+                <label for="cRua" style="display: flex;">                  
+                  <input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua, Av, Trav, ...">
+                  N°
+                   <input type="number" style="width: 50px" name="tNum" id="cNum" min="0" max="999999">
+              </li>
+              <li>
+                <label for="cCid">
+                  Cidade:
+                  <select name="tEst" id="cEst">
+                    <optgroup label="Região Suldeste">
+                      <option value="RJ">
+                        Rio de janeiro
+                      </option>
+                      <option value="SP" selected>
+                        São Paulo
+                      </option>
+                      <option value="MG">
+                        Minas Gerais
+                      </option>
+                    </optgroup>
+                    <optgroup label="Região Sul">
+                      <option value="PR">
+                        Paraná
+                      </option>
+                      <option value="SC">
+                        Santa Catarina
+                      </option>
+                      <option value="RS">
+                        Rio Grande do Sul
+                      </option>
+                    </optgroup>
+                  </select>
+              </label>
+              <li>
 
-        <div id="solicitacaoDeCredito">
-          <fieldset>
-            <legend>
-              <h1>
-                Preenchendo a ficha
-              </h1>
-            </legend>
-            <li>
-              Valor desejado para o seu investimento?
-              <input type="number" name="" id="">
-            </li>
-            <li>
-            <li>
-              Qual é seu trabalho/função?
-              <input type="text" name="" id="">
-            </li>
-            <li>
-              Renda Mensal?
-              <input type="number" name="" id="">
-            </li>
-            <label for="cUrg">
-              Grau de Urgência:
-            </label>
-            Min
-            <input type="range" name="tUrg" id="cUrg" min="0" max="10" step="1">Máx
-            </li>
-            <li>
-              Valor desejado para as parcelas?
-              <input type="number" name="" id="">
-            </li>
-            <li>
-              Valor de entrada disponivél em conta para fazer o seu investimento?
-              <input type="number" name="" id="">
-            </li>
-          </fieldset>
-        </div>
+                <label for="cMsg">
+                  Mensagem: <br>
+                  <textarea name="tMsg" id="cMsg" rows="3"
+                    placeholder="Deixe aqui um comentario para o proximo consultor"></textarea>
+                </label>
+              </li>
+              <button class="glow-on-hover" type="button">
+                Enviar
+              </button>
+            </fieldset>
+          </div>
 
-        <div id="infoPessoais">
-          <fieldset>
-            <legend>
-              <strong>Informações pessoais</strong>
-            </legend>
-            <li>
-              <label for="cNome">
-                Nome completo?
-              </label>
-              <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome completo">
-            </li>
-            <li>
-              CPF?
-              <input type="text">
-            </li>
-            <li>
-              O cliente tem restrição no CPF?
-              <label for="cpfOk">Sim</label>
-              <input type="checkbox" name="" id="">
-              <label for="cfpNãoOk">Não</label>
-              <input type="checkbox" name="" id="">
-            </li>
-            <li>
-              <label for="cNasc">
-                Data de Nascimento:
-              </label>
-              <input type="date" name="tNasc" id="cNasc">
-            </li>
-            <li>
-              <label for="cMail">
-                E-mail:
-              </label>
-              <input type="email" nome="tMail" id="cMail" size="20" maxlength="40">
-            </li>
-            <li>
-              RG?
-              <input type="text">
-            </li>
-            <li>
-              Nome completo do Pai?
-              <input type="text" name="" id="">
-            </li>
-            <li>
-              Nome completo da Mãe?
-              <input type="text" name="" id="">
-            </li>
-            <li>
-              <label for="cRua">
-                Lagradouro:
-              </label>
-              <input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua, Av, Trav, ...">
-            </li>
-            <li>
-              <label for="cNum">
-                N°
-              </label>
-              <input type="number" name="tNum" id="cNum" min="0" max="999999">
-            </li>
-            <li>
-              <label for="cEst">
-                Estado:
-              </label>
-              <select name="tEst" id="cEst">
-                <optgroup label="Região Suldeste">
-                  <option value="RJ">
-                    Rio de janeiro
-                  </option>
-                  <option value="SP" selected>
-                    São Paulo
-                  </option>
-                  <option value="MG">
-                    Minas Gerais
-                  </option>
-                </optgroup>
-                <optgroup label="Região Sul">
-                  <option value="PR">
-                    Paraná
-                  </option>
-                  <option value="SC">
-                    Santa Catarina
-                  </option>
-                  <option value="RS">
-                    Rio Grande do Sul
-                  </option>
-                </optgroup>
-              </select>
-            </li>
-            <li>
-              <label for="cCid">
-                Cidade:
-              </label>
-            </li>
-            <input type="text" name="tCid" id="cCid" maxlength="40" size="20" placeholder="Sua Cidade" list="cidades">
-            <datalist id="cidades">
-              <option value="Rio de Janeiro"></option>
-              <option value="Nova Iguaçu"></option>
-              <option value="Niterói"></option>
-              <option value="Belford Roxo"></option>
-            </datalist>
-            <li>
-              <label for="cMsg">
-                Mensagem:
-              </label>
-              <textarea name="tMsg" id="cMsg" rows="3"
-                placeholder="Deixe aqui um comentario para o proximo consultor"></textarea>
-            </li>
-          </fieldset>
-        </div>
-
-        <button class="glow-on-hover" type="button">
-          Enviar
-        </button>
-      </form>
-
+        </form>
+      </div>
     </section>
 
   </main>

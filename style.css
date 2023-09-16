@@ -4,7 +4,7 @@
   list-style: none;
 }
 
-header > p{
+header>p {
   padding: 25px;
 }
 
@@ -21,44 +21,49 @@ picture#logoMultiplanos {
 }
 
 form {
-  display: block;
-  text-align: justify;
-  list-style: none;
-  max-width: 430px; 
-  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.item {
+  display: flex;
+  flex-direction: row;
+}
+
+form>div {
+  max-width: 380px;
+}
+
+#simulacao {
   margin-bottom: 25px;
+  list-style: none;
 }
 
-form{
-  justify-content:space-around;
-  padding: 15px;
+div#solicitacaoDeCredito {
+  float: right;
 }
 
-#simulacao{
-  text-align: justify;
+form>div {
+  display: block;
+  flex-wrap: wrap;
+
 }
 
-
-
-form > li{
-  
-}
-
-form input{
-  max-width: 300;
+form input {
   margin: auto;
 }
 
-form > p, input {
-  font-size: large;
+input{
+  width: 100%;
 }
 
-fieldset{
+fieldset {
   margin: auto;
   padding: 15px;
 }
 
-.glow-on-hover{
+.glow-on-hover {
   margin: auto;
 }
 
@@ -87,7 +92,16 @@ nav {
   height: 25vh;
 }
 
+body {
+  /*
+  background-image: url("WhatsApp\ Image\ 2023-09-16\ at\ 17.09.01.png");
+  background-size: cover;
+*/
+}
+
 main {
+  min-height: 300px;
+  padding: 25px;
   /*
 
 Aqui é pra escolher a imagem de fundo PÓREM muita calma, to esperando o pix.
@@ -98,10 +112,12 @@ Aqui é pra escolher a imagem de fundo PÓREM muita calma, to esperando o pix.
   */
 }
 
-section{
+section {
   margin: auto;
 }
-
+li{
+  margin: 5px;
+}
 .nav-list {
   list-style: none;
   display: flex;
@@ -181,8 +197,10 @@ section{
 .mobile-menu.active .line3 {
   transform: rotate(45deg) translate(-5px, -7px);
 }
-footer{
-  padding-bottom: 15px;
+
+footer {
+  margin-top: 80px;
+  min-height: 60px;
   text-align: center;
   background-color: black;
   color: darkgoldenrod;
