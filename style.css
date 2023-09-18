@@ -124,7 +124,7 @@ picture#logoMultiplanos {
   background-image: url("logoMultiplanos.png");
   border-radius: 15px;
   max-width: 15vh;
-  box-shadow: 8px 7px 15px;
+  box-shadow: 8px 7px 15px blue;
 }
 
 form {
