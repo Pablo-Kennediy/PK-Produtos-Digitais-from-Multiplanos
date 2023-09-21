@@ -110,16 +110,24 @@ header>p {
   padding: 25px;
 }
 
-picture#logoMultiplanos {
+picture{
+  margin: auto;
+}
+
+picture img{
+  width: 85px;
+  border-radius: 500px;
+  box-shadow: 8px 7px 15px blue;
+}
+
+#logoMultiplanos, #lokoPKdigitalProducts {
+  
   display: block;
   margin: 15px;
 }
 
-#logoMultiplanos img {
-  background-image: url("logoMultiplanos.png");
-  border-radius: 15px;
-  max-width: 15vh;
-  box-shadow: 8px 7px 15px blue;
+#logoMultiplanos, #lokoPKdigitalProducts img {
+ 
 }
 
 form {
@@ -189,8 +197,15 @@ Aqui é pra escolher a imagem de fundo PÓREM muita calma, to esperando o pix.
   */
 }
 
+.footer{
+
+  padding: 15px;
+}
+
 footer {
+  flex-direction: row;
   margin-top: 80px;
+  padding: auto;
   min-height: 60px;
   text-align: center;
   background-color: black;
