@@ -31,7 +31,8 @@
         <li>
           <!--Clientes Ativos-->
           <!--Clientes não Ativos-->
-          <a href="https://docs.google.com/spreadsheets/d/1IUzOMQ3GFPAlCduyroWzFCFfxI29XSoaEWqjM11b54k/edit?usp=sharing" target="_blank">
+          <a href="https://docs.google.com/spreadsheets/d/1IUzOMQ3GFPAlCduyroWzFCFfxI29XSoaEWqjM11b54k/edit?usp=sharing"
+            target="_blank">
             Clientes
           </a>
         </li>
@@ -52,207 +53,213 @@
 
   </header>
   <main>
-    <section id="clientes">
-      <div class="ativos">
-        <form id="formClientesAtivos" action="" method="get">
-          <ul>
-            <fieldset>
-              <legend>
-                Resumo de
-                <strong>
-                  FICHA
-                </strong>
-              </legend>
-              <li>
-                <label>
-                  Nome do cliente:
-                </label>
-              </li>
-              <input type="text" name="" id="">
-              <li>
-                <label type="text">
-                  Cpf:
-                </label>
-              </li>
-              <input type="text" name="" id="">
-              <li>
-                <label>
-                  Valor da cota:
-                </label>
-              </li>
-              <input type="datetime" name="" placeholder="R$ 5 9 9. 0 0 0 , 2 0" id="">
-              <li>
-                <label>
-                  Consultor:
-                </label>
-              </li>
-              <input name="consultor" placeholder="JUNINHO DA SILVA" id="">
-              <li>
-                <label>
-                  Aniversario do contrato
-                </label>
-              </li>
-              <input type="date" name="" id="">
-            </fieldset>
-          </ul>
-        </form>
-      </div>
-
-      <div class="naoAtivos">
-        <form id="formClientesAtivos" action="">
-
-        </form>
-      </div>
-
-    </section>
-    <article>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe necessitatibus praesentium, atque consequuntur
-        voluptatum pariatur officia dolor voluptates repudiandae consectetur fugiat illo, eos perferendis, temporibus
-        harum quaerat eaque aliquid sunt.
-      </p>
-    </article>
-    <section id="simulacao">
-      <div>
-        <form>
-          <div id="solicitacaoDeCredito" class="simulacao">
-            <fieldset>
-              <legend>
-                <h1>
-                  Preenchendo a ficha
-                </h1>
-              </legend>
-              <li>
-                <label for="cNome">
-                  Cliente
-                </label>
-                <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome completo">
-              </li>
-              <li>
-                CPF?
-                <input type="text">
-              </li>
-              <li>
-                O cliente tem restrição no CPF?
-                <label for="cpfOk" class="item">
-                  Sim
-                  <input type="checkbox" name="" id="">
-                  Não
-                  <input type="checkbox" name="" id="">
-                </label>
-              </li>
-              <li>
-                Valor desejado para o seu investimento?
-                <input type="number" name="" id="">
-              </li>
-              <li>
-              <li>
-                Qual é seu trabalho/função?
+    <div class="conteiner">
+      <section id="clientes">
+        <div class="ativos">
+          <form id="formClientesAtivos" action="" method="get">
+            <ul>
+              <fieldset>
+                <legend>
+                  Resumo de
+                  <strong>
+                    FICHA
+                  </strong>
+                </legend>
+                <li>
+                  <label>
+                    Nome do cliente:
+                  </label>
+                </li>
                 <input type="text" name="" id="">
-              </li>
-              <li>
-                Renda Mensal?
-                <input type="number" name="" id="">
-              </li>
-              <li>
-                Grau de Urgência: <br>
-                <label for="cUrg" style="display: flex;">
-                  Min
-                  <input type="range" name="tUrg" id="cUrg" min="0" max="10" step="1">Máx
-                </label>
-              </li>
-              <li>
-                Valor desejado para as parcelas?
-                <input type="number" name="" id="">
-              </li>
-              <li>
-                Valor de entrada disponivél em conta para fazer o seu investimento?
-                <input type="number" name="" id="">
-              </li>
-            </fieldset>
-          </div>
-
-          <div id="infoPessoais" class="simulacao">
-            <fieldset>
-              <legend>
-                <strong>Informações pessoais</strong>
-              </legend>
-              <li>
-                <label for="cNasc">
-                  Data de Nascimento:
-                </label>
-                <input type="date" name="tNasc" id="cNasc">
-              </li>
-              <li>
-                <label for="cMail">
-                  E-mail:
-                </label>
-                <input type="email" nome="tMail" id="cMail" size="20" maxlength="40">
-              </li>
-              <li>
-                RG?
-                <input type="text">
-              </li>
-              <li>
-                Nome completo do Pai?
+                <li>
+                  <label type="text">
+                    Cpf:
+                  </label>
+                </li>
                 <input type="text" name="" id="">
-              </li>
-              <li>
-                Nome completo da Mãe?
-                <input type="text" name="" id="">
-              </li>
-              <li>
-                Endereço:
-                <label for="cRua" style="display: flex;">
-                  <input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua, Av, Trav, ...">
-                  N°
-                  <input type="number" style="width: 50px" name="tNum" id="cNum" min="0" max="999999">
-              </li>
-              <li>
-                <label for="cCid">
-                  Cidade:
-                  <select name="tEst" id="cEst">
-                    <optgroup label="Região Suldeste">
-                      <option value="RJ">
-                        Rio de janeiro
-                      </option>
-                      <option value="SP" selected>
-                        São Paulo
-                      </option>
-                      <option value="MG">
-                        Minas Gerais
-                      </option>
-                    </optgroup>
-                    <optgroup label="Região Sul">
-                      <option value="PR">
-                        Paraná
-                      </option>
-                      <option value="SC">
-                        Santa Catarina
-                      </option>
-                      <option value="RS">
-                        Rio Grande do Sul
-                      </option>
-                    </optgroup>
-                  </select>
-                </label>
-              <li>
+                <li>
+                  <label>
+                    Valor da cota:
+                  </label>
+                </li>
+                <input type="datetime" name="" placeholder="R$ 5 9 9. 0 0 0 , 2 0" id="">
+                <li>
+                  <label>
+                    Consultor:
+                  </label>
+                </li>
+                <input name="consultor" placeholder="JUNINHO DA SILVA" id="">
+                <li>
+                  <label>
+                    Aniversario do contrato
+                  </label>
+                </li>
+                <input type="date" name="" id="">
+              </fieldset>
+            </ul>
+          </form>
+        </div>
 
-                <label for="cMsg">
-                  Mensagem: <br>
-                  <textarea name="tMsg" id="cMsg" rows="3"
-                    placeholder="Deixe aqui um comentario para o proximo consultor"></textarea>
-                </label>
-              </li>
-              <button class="glow-on-hover" type="button">
-                Enviar
-              </button>
-            </fieldset>
-          </div>
+        <div class="naoAtivos">
+          <form id="formClientesAtivos" action="">
 
-        </form>
-      </div>
-    </section>
+          </form>
+        </div>
+
+      </section>
+    </div>
+    <div class="container">
+      <article>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe necessitatibus praesentium, atque consequuntur
+          voluptatum pariatur officia dolor voluptates repudiandae consectetur fugiat illo, eos perferendis, temporibus
+          harum quaerat eaque aliquid sunt.
+        </p>
+      </article>
+    </div>
+    <div class="container">
+      <section id="simulacao">
+        <div>
+          <form>
+            <div id="solicitacaoDeCredito" class="simulacao">
+              <fieldset>
+                <legend>
+                  <h1>
+                    Preenchendo a ficha
+                  </h1>
+                </legend>
+                <li>
+                  <label for="cNome">
+                    Cliente
+                  </label>
+                  <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome completo">
+                </li>
+                <li>
+                  CPF?
+                  <input type="text">
+                </li>
+                <li>
+                  O cliente tem restrição no CPF?
+                  <label for="cpfOk" class="item">
+                    Sim
+                    <input type="checkbox" name="" id="">
+                    Não
+                    <input type="checkbox" name="" id="">
+                  </label>
+                </li>
+                <li>
+                  Valor desejado para o seu investimento?
+                  <input type="number" name="" id="">
+                </li>
+                <li>
+                <li>
+                  Qual é seu trabalho/função?
+                  <input type="text" name="" id="">
+                </li>
+                <li>
+                  Renda Mensal?
+                  <input type="number" name="" id="">
+                </li>
+                <li>
+                  Grau de Urgência: <br>
+                  <label for="cUrg" style="display: flex;">
+                    Min
+                    <input type="range" name="tUrg" id="cUrg" min="0" max="10" step="1">Máx
+                  </label>
+                </li>
+                <li>
+                  Valor desejado para as parcelas?
+                  <input type="number" name="" id="">
+                </li>
+                <li>
+                  Valor de entrada disponivél em conta para fazer o seu investimento?
+                  <input type="number" name="" id="">
+                </li>
+              </fieldset>
+            </div>
+
+            <div id="infoPessoais" class="simulacao">
+              <fieldset>
+                <legend>
+                  <strong>Informações pessoais</strong>
+                </legend>
+                <li>
+                  <label for="cNasc">
+                    Data de Nascimento:
+                  </label>
+                  <input type="date" name="tNasc" id="cNasc">
+                </li>
+                <li>
+                  <label for="cMail">
+                    E-mail:
+                  </label>
+                  <input type="email" nome="tMail" id="cMail" size="20" maxlength="40">
+                </li>
+                <li>
+                  RG?
+                  <input type="text">
+                </li>
+                <li>
+                  Nome completo do Pai?
+                  <input type="text" name="" id="">
+                </li>
+                <li>
+                  Nome completo da Mãe?
+                  <input type="text" name="" id="">
+                </li>
+                <li>
+                  Endereço:
+                  <label for="cRua" style="display: flex;">
+                    <input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua, Av, Trav, ...">
+                    N°
+                    <input type="number" style="width: 50px" name="tNum" id="cNum" min="0" max="999999">
+                </li>
+                <li>
+                  <label for="cCid">
+                    Cidade:
+                    <select name="tEst" id="cEst">
+                      <optgroup label="Região Suldeste">
+                        <option value="RJ">
+                          Rio de janeiro
+                        </option>
+                        <option value="SP" selected>
+                          São Paulo
+                        </option>
+                        <option value="MG">
+                          Minas Gerais
+                        </option>
+                      </optgroup>
+                      <optgroup label="Região Sul">
+                        <option value="PR">
+                          Paraná
+                        </option>
+                        <option value="SC">
+                          Santa Catarina
+                        </option>
+                        <option value="RS">
+                          Rio Grande do Sul
+                        </option>
+                      </optgroup>
+                    </select>
+                  </label>
+                <li>
+
+                  <label for="cMsg">
+                    Mensagem: <br>
+                    <textarea name="tMsg" id="cMsg" rows="3"
+                      placeholder="Deixe aqui um comentario para o proximo consultor"></textarea>
+                  </label>
+                </li>
+                <button class="glow-on-hover" type="button">
+                  Enviar
+                </button>
+              </fieldset>
+            </div>
+
+          </form>
+        </div>
+      </section>
+    </div>
   </main>
   <script src="../scripts/mobile-navbar.js"></script>
   <footer>
