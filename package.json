@@ -5,8 +5,13 @@
   "license": "MIT",
   "main": "lib/index.js",
   "types": "types/index.d.ts",
-  "repository": "https://github.com/tailwindlabs/tailwindcss.git",
-  "bugs": "https://github.com/tailwindlabs/tailwindcss/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tailwindlabs/tailwindcss.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tailwindlabs/tailwindcss/issues"
+  },
   "homepage": "https://tailwindcss.com",
   "bin": {
     "tailwind": "lib/cli.js",
@@ -109,5 +114,10 @@
   },
   "engines": {
     "node": ">=16.0.0"
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "keywords": [],
+  "author": ""
 }
