@@ -54,6 +54,7 @@
 
   </header>
   <main>
+    <!--
     <div class="conteiner">
       <section id="clientes">
         <div class="ativos">
@@ -118,6 +119,7 @@
         </p>
       </article>
     </div>
+    -->
     <div class="container">
       <section id="simulacao">
         <div>
@@ -140,12 +142,10 @@
                   <input type="text">
                 </li>
                 <li>
-                  O cliente tem restrição no CPF?
-                  <label for="cpfOk" class="item">
-                    Sim
-                    <input type="checkbox" name="" id="">
-                    Não
-                    <input type="checkbox" name="" id="">
+                  Grau de Urgência: <br>
+                  <label for="cUrg" style="display: flex;">
+                    Min
+                    <input type="range" name="tUrg" id="cUrg" min="0" max="10" step="1">Máx
                   </label>
                 </li>
                 <li>
@@ -160,14 +160,7 @@
                 <li>
                   Renda Mensal?
                   <input type="number" name="" id="">
-                </li>
-                <li>
-                  Grau de Urgência: <br>
-                  <label for="cUrg" style="display: flex;">
-                    Min
-                    <input type="range" name="tUrg" id="cUrg" min="0" max="10" step="1">Máx
-                  </label>
-                </li>
+                </li>                
                 <li>
                   Valor desejado para as parcelas?
                   <input type="number" name="" id="">
@@ -207,6 +200,15 @@
                 <li>
                   Nome completo da Mãe?
                   <input type="text" name="" id="">
+                </li>
+                <li>
+                  O cliente tem restrição no CPF?
+                  <label for="cpfOk" class="item">
+                    Sim
+                    <input type="checkbox" name="" id="">
+                    Não
+                    <input type="checkbox" name="" id="">
+                  </label>
                 </li>
                 <li>
                   Endereço:
@@ -261,19 +263,19 @@
         </div>
       </section>
     </div>
-  </main>
-  <script src="main/taillwind css/scripts/mobile-navbar.js">mobile - navbar.js</script>
-  <footer>
-    <picture id="logoMultiplanos">
+    <picture id="logos">
       <a class="logo" href="https://multiplanosconsorcios.com.br/" target="_blank">
         <img src="main/img/logoMultiplanos.png" id="logoMultiplanos" alt="logoMultiplanos">
       </a>
       <!-- Link da minha empresa -->
-      <a href="">
+      <a href="https://www.instagram.com/pk_digital_products/">
         <!-- Logo da PK Digital Products -->
-        <img src="" alt="">
+        <img src="main/img/iconsMoon.png" alt="iconsMoon">
       </a>
     </picture>
+  </main>
+  <script src="main/taillwind css/scripts/mobile-navbar.js">mobile - navbar.js</script>
+  <footer>
     <!-- Colocar um map só pra estilizar o work espace e soma conteudo na HOME PAGE -->
     <label name="map" for="">
       <picture id="map">

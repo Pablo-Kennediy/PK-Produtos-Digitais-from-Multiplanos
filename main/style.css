@@ -142,7 +142,7 @@ form {
 }
 
 form>div {
-  max-width: 380px;
+  max-width: 400px;
 }
 
 #simulacao {
@@ -169,7 +169,6 @@ input{
 }
 
 fieldset {
-  margin: auto;
   padding: 15px;
 }
 
@@ -185,8 +184,7 @@ body {
 }
 
 main {
-  min-height: 300px;
-  padding: 25px;
+  padding: 30px;
   /*
 
 Aqui é pra escolher a imagem de fundo PÓREM muita calma, to esperando o pix.
@@ -197,15 +195,19 @@ Aqui é pra escolher a imagem de fundo PÓREM muita calma, to esperando o pix.
   */
 }
 
+picture#logos{
+  display: flex;
+  justify-content: space-around;
+}
+
 .footer{
   padding: 15px;
 }
 
 footer {
   flex-direction: row;
-  margin-top: 80px;
   padding: auto;
-  min-height: 60px;
+  min-height: 30vh;
   text-align: center;
   background-color: black;
   color: darkgoldenrod;
