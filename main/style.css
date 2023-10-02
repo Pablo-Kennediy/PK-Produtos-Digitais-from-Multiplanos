@@ -185,14 +185,15 @@ body {
 
 main {
   padding: 30px;
-  /*
-
-Aqui é pra escolher a imagem de fundo PÓREM muita calma, to esperando o pix.
-
+  /*Aqui é pra escolher a imagem de fundo PÓREM muita calma, to esperando o pix.
   background: url("bg.jpg") no-repeat center center;
   background-size: cover;
-  height: 92vh;
-  */
+  height: 92vh;*/
+}
+
+picture#map img{
+  width: 100%;
+  
 }
 
 picture#logos{
